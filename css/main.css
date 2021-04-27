@@ -33,7 +33,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    min-width: 40rem;
+    min-width: 32rem;
 }
 
 
@@ -107,7 +107,7 @@ main {
     width: 100%;
 }
 .main__logo img {
-    width: 70%;
+    width: 45%;
     max-width: 27.2rem;
 }
 .main__search {
@@ -246,6 +246,58 @@ footer {
 }
 
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 600px) {
+
+        /* MAIN */
+
+        .main__buttons {
+            display: none;
+        }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .global-wrapper {
+        display: block;
+    }
+
+
+
+    /* HEADER */
+
+    header {
+        display: block;
+    }
+    .nav {
+        justify-content: space-between;
+    }
+    .nav:first-child {
+        margin-left: 2.1rem;
+    }
+
+
+    /* MAIN */
+    .main__logo {
+        margin-top: 5rem;
+    }
+    .main__input-container input {
+        height: 2rem;
+    }
+    .main__input-container .search-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    .main__input-container .micro-icon {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .language {
+        text-align: center;
+        height: 33%;
+    }
+    
+    
+
+    /* FOOTER */
     
 }
