@@ -16,8 +16,9 @@ a:hover {
 .global-wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
     align-items: center;
+    height: 100vh;
+    min-width: 400px;
 }
 
 
@@ -82,11 +83,11 @@ main {
     width: 100%;
 }
 .main__logo {
-    margin: 30px auto 20px;
+    margin: 0 auto 20px;
 }
 .main__logo img {
     width: 70%;
-    max-width: 320px;
+    max-width: 272px;
 }
 .main__search {
     padding: 20px;
@@ -128,6 +129,7 @@ main {
     padding-right: 13px;
 }
 .main__input-container .micro-icon {
+    display: inline-block;
     background-image: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -160,6 +162,10 @@ main {
     color: #222;
     background-color: #f8f8f8;
 }
+.language {
+    flex-grow: 1;
+    margin-bottom: 24px;
+}
 .language p {
     margin: 0;
 }
@@ -169,10 +175,7 @@ main {
 
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
     background-color: #f2f2f2;
-    overflow: hidden;
 }
 .footer__top {
     padding: 15px 30px;
@@ -186,15 +189,32 @@ footer {
     padding: 0 20px;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 .footer__bottom ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+}
+.footer__bottom li {
+    flex-grow: 1;
+    padding: 15px;
+    text-align: center;
 }
 .footer__bottom a {
-    padding: 15px;
     color: #5f6368;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    /* FOOTER */
+    
+    .footer__bottom {
+        justify-content: space-evenly;
+    } 
 }
