@@ -1,3 +1,12 @@
+/* VARIABLES */
+
+:root {
+    --soft-white: #f2f2f2;
+    --dark-grey: #5f6368;
+}
+
+
+
 /* GLOBAL RULES */
 
 * {
@@ -28,6 +37,7 @@ a:hover {
 }
 
 
+
 /* HEADER */
 
 header {
@@ -52,7 +62,6 @@ header {
 .nav__list a {
     color: #000000;
 }
-
 .icon-wrapper {
     display: flex;
     width: 4rem;
@@ -63,7 +72,7 @@ header {
     margin-left: 0.1rem;
 }
 .icon-wrapper:hover {
-    background-color: #eeeff0;
+    background-color: #eff0f0;
 }
 .nav__list .menu-icon {
     background-image: url("https://static.thenounproject.com/png/654601-200.png");
@@ -85,6 +94,7 @@ header {
     width: 3.2rem;
     border-radius: 100%;
 }
+
 
 
 /* MAIN */
@@ -147,7 +157,6 @@ main {
     height: 2.4rem;
     cursor: pointer;
 }
-
 .main__buttons {
     padding-top: 1.8rem;
 }
@@ -156,10 +165,10 @@ main {
 }
 .main__buttons button {
     height: 3.6rem;
-    background-color: #f2f2f2;
-    border: 0.1rem solid #f2f2f2;
+    background-color: var(--soft-white);
+    border: 0.1rem solid var(--soft-white);
     font-size: 1.4rem;
-    color: #5f6368;
+    color: var(--dark-grey);
     border-radius: 0.4rem;
     padding: 0 1.6rem;
     margin: 1.1rem 0.4rem;
@@ -182,16 +191,16 @@ main {
 
 footer {
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: var(--soft-white);
 }
 .footer__top {
     padding: 1.5rem 3rem;
     border-bottom: 0.1rem solid #e4e4e4;
     font-size: 1.5rem;
-    color: #5f6368;
+    color: var(--dark-grey);
 }
 .footer__bottom {
-    background-color: #f2f2f2;
+    background-color: var(--soft-white);
     font-size: 1.4rem;
     padding: 0 2rem;
 
@@ -211,7 +220,7 @@ footer {
     text-align: center;
 }
 .footer__bottom a {
-    color: #5f6368;
+    color: var(--dark-grey);
     white-space: nowrap;
 }
 
