@@ -279,7 +279,7 @@ footer {
     .nav {
         justify-content: space-between;
     }
-    .nav:first-child {
+    .nav ul:first-child {
         margin-left: 2.1rem;
     }
 
@@ -318,7 +318,7 @@ footer {
     .footer__right {
         align-self: flex-start;
     }
-    .footer__left li:last-child a {
+    .footer__left .esp-li {
         white-space: break-spaces;
     }
 }
